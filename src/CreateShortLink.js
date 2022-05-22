@@ -16,9 +16,9 @@ const CreateShortLink = ( {originalLink})=>{
               setShortLink(res.data.result.full_short_link)})
         // ,1000)
     }
-    ,[shortLink]);
+    );
     return( <div>
-        <p>{originalLink}</p>
+        {/* <p>{originalLink}</p> */}
 
         <a href={shortLink} target="_blank" >{shortLink}</a>
     </div>
